@@ -1,0 +1,128 @@
+// /* Our team */
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-secondary-color;
+}
+
+.team-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-title-color;
+}
+
+.team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-title-color;
+}
+
+.team-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.icon-team {
+  fill: #afb1b8;
+}
+
+.list-list-link:focus-within {
+  background-color: $accent-color;
+}
+.list-list-link:focus-within .icon-team {
+  fill: $secondary-text-color;
+}
+
+.list-list-link {
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+  &:hover .icon-team {
+    fill: $secondary-text-color;
+  }
+}
+
+.list-list-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-img {
+  display: flex;
+  justify-content: center;
+}
+
+.team-list-item {
+  text-align: center;
+  padding-bottom: 24px;
+  background: $background-main-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .team-list-item {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

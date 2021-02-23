@@ -1,0 +1,56 @@
+.we-do {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .we-do {
+    display: block;
+    padding-bottom: 94px;
+  }
+
+  .we-do-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .we-do-text {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: $secondary-text-background-color;
+    color: $secondary-text-color;
+  }
+
+  .we-do-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-title-color;
+  }
+
+  .we-do-list .img-in {
+    display: block;
+  }
+
+  .we-do-list .we-do-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .we-do-list-item {
+    position: relative;
+  }
+}
